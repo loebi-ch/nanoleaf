@@ -1,0 +1,37 @@
+{
+  "domain": "nanoleaf",
+  "name": "Nanoleaf",
+  "codeowners": ["@loebi-ch", "@jacekowski", "@JaspervRijbroek", "@jonathanrobichaud4"],
+  "config_flow": true,
+  "documentation": "https://github.com/loebi-ch/nanoleaf/blob/main/README.md",
+  "homekit": {
+    "models": ["NL29", "NL42", "NL47", "NL48", "NL52", "NL59", "NL69", "NL81"]
+  },
+  "integration_type": "hub",
+  "iot_class": "local_push",
+  "issue_tracker": "https://github.com/loebi-ch/nanoleaf/issues",
+  "loggers": ["aionanoleaf2"],
+  "requirements": ["aionanoleaf2>=1.0.2"],
+  "ssdp": [
+    {
+      "st": "Nanoleaf_aurora:light"
+    },
+    {
+      "st": "nanoleaf:nl29"
+    },
+    {
+      "st": "nanoleaf:nl42"
+    },
+    {
+      "st": "nanoleaf:nl52"
+    },
+    {
+      "st": "nanoleaf:nl69"
+    },
+    {
+      "st": "inanoleaf:nl81"
+    }
+  ],
+  "version": "2.0.1",
+  "zeroconf": ["_nanoleafms._tcp.local.", "_nanoleafapi._tcp.local."]
+}
