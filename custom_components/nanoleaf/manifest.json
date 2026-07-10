@@ -11,7 +11,7 @@
   "iot_class": "local_push",
   "issue_tracker": "https://github.com/loebi-ch/nanoleaf/issues",
   "loggers": ["aionanoleaf2"],
-  "requirements": ["aionanoleaf2>=1.0.2"],
+  "requirements": ["aionanoleaf2 @ git+https://github.com/lukebaldan/aionanoleaf2.git@fix/essentials-missing-state"],
   "ssdp": [
     {
       "st": "Nanoleaf_aurora:light"
@@ -32,6 +32,6 @@
       "st": "inanoleaf:nl81"
     }
   ],
-  "version": "2.0.1",
+  "version": "2.0.1-essentials-state-fix",
   "zeroconf": ["_nanoleafms._tcp.local.", "_nanoleafapi._tcp.local."]
 }
